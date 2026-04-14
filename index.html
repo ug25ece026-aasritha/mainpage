@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nirbhaya App</title>
+    <style>
+        body {
+            background: black;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1 { color: #d2b48c; font-size: 50px; }
+        h2 { color: #00bfff; }
+
+        button {
+            width: 60%;
+            padding: 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .blue { background: #6b8e95; color: white; }
+        .brown { background: #8b6b5c; color: white; }
+    </style>
+</head>
+
+<body>
+<img src="https://i.ibb.co/GvxB3Bzg/logo-png.png" width="175" height="160">
+<h1>NIRBHAYA</h1>
+<h2>Your Safety, Our Priority</h2>
+
+<button class="blue" onclick="openLink('contacts')">📇 Select Emergency Contacts</button>
+<button class="brown" onclick="openLink('call')">📞 Call First Contact</button>
+<button class="blue" onclick="openLink('sos')">🚨 Send SOS</button>
+<button class="brown" onclick="openLink('police')">🚓 Police (100)</button>
+<button class="blue" onclick="openLink('women')">👩 Women Helpline (1091)</button>
+<button class="brown" onclick="openLink('emergency')">🚑 Emergency (112)</button>
+<button class="blue" onclick="openLink('medical')">🏥 Medical (108)</button>
+<button class="brown" onclick="openLink('tips')">💡 Safety Tips and Tricks</button>
+<button class="blue" onclick="openLink('location')">📍 Show My Location</button>
+
+<script>
+function openLink(type) {
+
+    let urls = {
+        contacts: "https://ug25ece026-aasritha.github.io/contact/",
+        call: "https://ug25ece026-aasritha.github.io/contact/",
+        sos: "https://ug25ece026-aasritha.github.io/sos/",
+        police: "https://ug25ece026-aasritha.github.io/numberdailing/",
+        women: "https://ug25ece026-aasritha.github.io/numberdailing/",
+        emergency: "https://ug25ece026-aasritha.github.io/numberdailing/",
+        medical: "https://ug25ece026-aasritha.github.io/numberdailing/",
+        tips: "https://ug25ece026-aasritha.github.io/safety/",
+        location: "https://ug25ece026-aasritha.github.io/location/"
+    };
+
+    window.open(urls[type], "_blank");
+}
+</script>
+
+</body>
+</html>
